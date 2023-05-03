@@ -1,7 +1,60 @@
-window.addEventListener('DOMContentLoaded', function() {
-    
-    const sliderContainers = document.querySelectorAll('.wraper-conteiner');
+const addDragListeners = (carouselContainer) => {
+carouselContainer.addEventListener("mousedown", dragStart);
+carouselContainer.addEventListener("touchstart", dragStart);
 
+document.addEventListener("mousemove", dragging);
+carouselContainer.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carouselContainer.addEventListener("touchend", dragStop);
+}
+
+const removeDragListeners = () => {
+document.removeEventListener("mousemove", dragging);
+carouselContainer.removeEventListener("touchmove", dragging);
+
+document.removeEventListener("mouseup", dragStop);
+carouselContainer.removeEventListener("touchend", dragStop);
+}
+
+const dragStart = (e) => {
+// updatating global variables value on mouse down event
+isDragStart = true;
+prevPageX = e.pageX || e.touches[0].pageX;
+prevScrollLeft = carouselContainer.scrollLeft;
+
+// добавляем обработчики событий только к слайдеру, когда пользователь начинает перетаскивание
+addDragListeners(carouselContainer);
+}
+
+const dragStop = () => {
+isDragStart = false;
+carouselContainer.classList.remove("dragging");
+if(!isDragging) return;
+isDragging = false;
+autoSlide();
+
+// удаляем обработчики событий, когда пользователь заканчивает перетаскивание
+removeDragListeners();
+}
+
+const dragging = (e) => {
+if(!isDragStart) return;
+isDragging = true;
+carouselContainer.classList.add("dragging");
+positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+if (Math.abs(positionDiff) > 100) {
+    e.preventDefault();
+}
+
+carouselContainer.scrollLeft = prevScrollLeft - positionDiff;
+showHideIcons();
+}
+
+// добавляем обработчики событий к слайдеру, когда DOM готов
+window.addEventListener('DOMContentLoaded', function() {
+const sliderContainers = document.querySelectorAll('.wraper-conteiner');
+  
     for(let i = 0; i < sliderContainers.length; i++) {
         const container = sliderContainers[i];
         const carouselContainer = container.querySelector('.carousel');
@@ -15,7 +68,7 @@ window.addEventListener('DOMContentLoaded', function() {
             arrowButtons[0].style.display = carouselContainer.scrollLeft == 0 ? "none" : "block";
             arrowButtons[1].style.display = carouselContainer.scrollLeft == scrollWidth ? "none" : "block";
         }
-
+        
         arrowButtons.forEach(icon => {
             icon.addEventListener("click", () => {
                 let firstImgWidth = firstImg.clientWidth; // getting first img width & adding 0 margin value
@@ -39,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
             });
         });
-
+        
         const autoSlide = () => {
             // if there is no image left to scroll then return from here
             if(carouselContainer.scrollLeft === 0) return;
@@ -48,12 +101,12 @@ window.addEventListener('DOMContentLoaded', function() {
             // getting difference value that needs to add or reduce from carousel left to take middle img center
             let valDifference = firstImgWidth - positionDiff;
             if(carouselContainer.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
-            return carouselContainer.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+                return carouselContainer.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
             }
             // if user is scrolling to the left
             carouselContainer.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
         }
-
+        
         const dragStart = (e) => {
             // updatating global variables value on mouse down event
             isDragStart = true;
@@ -66,7 +119,7 @@ window.addEventListener('DOMContentLoaded', function() {
             isDragging = true;
             carouselContainer.classList.add("dragging");
             positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-            if (Math.abs(positionDiff) > 10) {
+            if (Math.abs(positionDiff) > 100) {
                 e.preventDefault();
             }
             
@@ -80,7 +133,6 @@ window.addEventListener('DOMContentLoaded', function() {
             if(!isDragging) return;
             isDragging = false;
             autoSlide();
-
             
         }
         
