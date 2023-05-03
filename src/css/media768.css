@@ -1,0 +1,138 @@
+@media (min-width: 768px) {
+  .content-conteiner header .header-conteiner .user-info {
+    display: grid;
+    grid-template-columns: 25vi 1fr;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-foto .user-name {
+    width: 25vi;
+    height: 25vi;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-foto .user-name p {
+    font-size: calc(1em + 1vw - 3px);
+  }
+  .content-conteiner header .header-conteiner .user-info .user-foto img {
+    width: 25vi;
+    height: 25vi;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .profession {
+    height: 5vi;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .profession .profession-tex {
+    height: 5vi;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .tabs {
+    display: flex;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .tabs .left-tabs, .content-conteiner header .header-conteiner .user-info .user-skils .tabs .right-tabs {
+    height: 20vi;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .tabs .right-tabs a span {
+    padding: 0 0 0 30%;
+  }
+  .content-conteiner header .header-conteiner .user-info .user-skils .tabs .left-tabs a span {
+    padding: 0 0 0 10%;
+  }
+  .content-conteiner header .header-conteiner .phone-number {
+    height: 5vi;
+  }
+  .content-conteiner header .header-conteiner .phone-number p {
+    font-size: calc(1em + 1vw);
+  }
+  .content-conteiner nav .nav-conteiner {
+    height: 9vi;
+  }
+  .content-conteiner nav .nav-conteiner .sait-navigation a img, .content-conteiner nav .nav-conteiner .links-navigation a img {
+    width: 7vi;
+  }
+  .content-conteiner main .main-conteiner .main-price-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .detailed-price {
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block .procedur img, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block .procedur img {
+    height: 5vi;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block .procedur p, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block .procedur p {
+    padding: 1% 0 0 0;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block .procedur .procedur-naim, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block .procedur .procedur-naim {
+    font-size: calc(1em + 2vw);
+    background: none;
+    flex-grow: 1;
+    color: rgb(0, 187, 255);
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1, .content-conteiner main .main-conteiner .main-price-block .beauty-price2, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 {
+    height: auto;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont {
+    height: auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok1, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok1, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok1 {
+    padding: 10% 0 0 0;
+    font-size: calc(1em + 3vw);
+    height: 20vi;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok2, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok2, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok2 {
+    padding: 0vi 0;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok2 p {
+    font-size: calc(1em + 1vw - 3px);
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok3 {
+    padding: 15% 0 0 0;
+    font-size: calc(1em + 3vw);
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .beauty-price3 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .main-procedur {
+    height: 60vi;
+    grid-row: 3;
+    grid-column: 1/4;
+  }
+  .content-conteiner main .main-conteiner .main-price-block .main-procedur .first, .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont, .content-conteiner main .main-conteiner .main-price-block .main-procedur .therd {
+    padding: 1%;
+    font-size: calc(1em + 1vw - 7px);
+  }
+  .content-conteiner main .main-conteiner .main-price-block .main-procedur .first p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .therd p {
+    padding: 1% 0;
+  }
+  .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-name {
+    font-size: calc(1em + 2vw);
+  }
+  .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state .paragraf1 {
+    font-size: calc(1em + 1vw - 4px);
+  }
+  .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state .paragraf2 {
+    display: block;
+    font-size: calc(1em + 1vw - 4px);
+  }
+  .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state a {
+    height: 7vi;
+    font-size: calc(1em + 2vw);
+  }
+  .content-conteiner footer .futer-conteiner {
+    height: 15vi;
+  }
+  .content-conteiner footer .futer-conteiner .user-contacts .conacts-links a img, .content-conteiner footer .futer-conteiner .my-contacts .conacts-links a img {
+    width: 5vi;
+    height: 5vi;
+  }
+}/*# sourceMappingURL=media768.css.map */

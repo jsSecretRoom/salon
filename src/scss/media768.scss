@@ -1,0 +1,203 @@
+@media (min-width: 768px) {
+    .content-conteiner {
+        header{
+            .header-conteiner {
+                .user-info {
+                    display: grid;
+                    grid-template-columns: 25vi 1fr;
+                    .user-foto {
+                        .user-name {
+                            width: 25vi;
+                            height: 25vi;
+                            p{
+                                font-size: calc(1em + 1vw - 3px);
+                            }
+                        }
+                        img{
+                            width: 25vi;
+                            height: 25vi;
+                        }
+                    }
+                    .user-skils {
+                        .profession {
+                            height: 5vi;
+                            .profession-tex{
+                                height: 5vi;
+                            } 
+                        }
+                        
+                        .tabs {
+                            display: flex;
+                            .left-tabs, .right-tabs {
+                                height: 20vi;
+                            }
+                            .right-tabs {
+                                a{
+                                    span{
+                                        padding: 0 0 0 30% ;
+                                    }
+                                }
+                            }
+                            .left-tabs{
+                                a{
+                                    span{
+                                        padding: 0 0 0 10% ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .phone-number {
+                    height: 5vi;
+                    p{
+                        font-size: calc(1em + 1vw);
+                    }
+                }
+            }    
+        }
+        nav{
+            .nav-conteiner {
+                height: 9vi;
+                .sait-navigation, .links-navigation{
+                    a{
+                        img{
+                            width: 7vi;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            .main-conteiner {
+                .main-price-block {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto auto auto;
+                    .detailed-price {
+                        grid-row: 1;
+                        grid-column: 1 / 4;
+                        .my-price{
+                            .left-price, .right-price{
+                                .price-block{
+                                    .procedur{
+                                        img{
+                                            height: 5vi;
+                                        }
+                                        p{
+                                            padding: 1% 0 0 0;
+                                            
+                                        }
+                                        .procedur-naim {
+                                            font-size: calc(1em + 2vw);
+                                            background: none;
+                                            flex-grow:1;
+                                            color: rgb(0, 187, 255);
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .beauty-price1, .beauty-price2, .beauty-price3{
+                        height: auto;
+                        .procedurs-container{
+                            
+                            .infocont{
+                                height: auto;
+                                padding: 0 5%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                
+                                .blok1{
+                                    padding: 10% 0 0 0;
+                                    font-size: calc(1em + 3vw);
+                                    height: 20vi;
+                                }
+                                .blok2{
+                                    padding: 0vi 0;
+                                    p{
+                                        font-size: calc(1em + 1vw - 3px);
+                                    }
+                                }
+                                .blok3{
+                                    padding: 15% 0 0 0;
+                                    font-size: calc(1em + 3vw);
+                                }
+                                
+                            }
+                            
+                        }
+
+                    }
+                    .beauty-price1{
+                        grid-column: 1;
+                        grid-row: 2;
+                    }
+                    .beauty-price2{
+                        grid-column: 2;
+                        grid-row: 2;
+                    }
+                    .beauty-price3{
+                        grid-column: 3;
+                        grid-row: 2;
+                    }
+                    .main-procedur {
+                        height: 60vi;
+                        grid-row: 3 ;
+                        grid-column: 1 / 4;
+                        .first, .secont, .therd{
+                            padding: 1%;
+                            font-size: calc(1em + 1vw - 7px);
+                            p{
+                                padding: 1% 0;
+                            }
+                        }
+                    }
+                }
+                .byografy {
+                    .byografy-conteiner {
+                        .byografy-info {
+                            .byografy-name {
+                                font-size: calc(1em + 2vw);
+                            }
+                            .byografy-state {
+                                
+                                .paragraf1{
+                                    font-size: calc(1em + 1vw - 4px);
+                                }
+                                .paragraf2{
+                                    display: block;
+                                    font-size: calc(1em + 1vw - 4px);
+                                }
+                                a{
+                                    height: 7vi;
+                                    font-size: calc(1em + 2vw);
+                                }
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+        footer{
+            .futer-conteiner {
+                height: 15vi;
+                .user-contacts, .my-contacts{
+                    .conacts-links{
+                        
+                        a {
+                            img{
+                                width: 5vi;
+                                height: 5vi;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
