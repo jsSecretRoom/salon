@@ -1,54 +1,54 @@
 const addDragListeners = (carouselContainer) => {
-carouselContainer.addEventListener("mousedown", dragStart);
-carouselContainer.addEventListener("touchstart", dragStart);
+    carouselContainer.addEventListener("mousedown", dragStart);
+    carouselContainer.addEventListener("touchstart", dragStart);
 
-document.addEventListener("mousemove", dragging);
-carouselContainer.addEventListener("touchmove", dragging);
+    document.addEventListener("mousemove", dragging);
+    carouselContainer.addEventListener("touchmove", dragging);
 
-document.addEventListener("mouseup", dragStop);
-carouselContainer.addEventListener("touchend", dragStop);
+    document.addEventListener("mouseup", dragStop);
+    carouselContainer.addEventListener("touchend", dragStop);
 }
 
 const removeDragListeners = () => {
-document.removeEventListener("mousemove", dragging);
-carouselContainer.removeEventListener("touchmove", dragging);
+    document.removeEventListener("mousemove", dragging);
+    carouselContainer.removeEventListener("touchmove", dragging);
 
-document.removeEventListener("mouseup", dragStop);
-carouselContainer.removeEventListener("touchend", dragStop);
+    document.removeEventListener("mouseup", dragStop);
+    carouselContainer.removeEventListener("touchend", dragStop);
 }
 
 const dragStart = (e) => {
-// updatating global variables value on mouse down event
-isDragStart = true;
-prevPageX = e.pageX || e.touches[0].pageX;
-prevScrollLeft = carouselContainer.scrollLeft;
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carouselContainer.scrollLeft;
 
-// добавляем обработчики событий только к слайдеру, когда пользователь начинает перетаскивание
-addDragListeners(carouselContainer);
+    // добавляем обработчики событий только к слайдеру, когда пользователь начинает перетаскивание
+    addDragListeners(carouselContainer);
 }
 
 const dragStop = () => {
-isDragStart = false;
-carouselContainer.classList.remove("dragging");
-if(!isDragging) return;
-isDragging = false;
-autoSlide();
+    isDragStart = false;
+    carouselContainer.classList.remove("dragging");
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
 
-// удаляем обработчики событий, когда пользователь заканчивает перетаскивание
-removeDragListeners();
+    // удаляем обработчики событий, когда пользователь заканчивает перетаскивание
+    removeDragListeners();
 }
 
 const dragging = (e) => {
-if(!isDragStart) return;
-isDragging = true;
-carouselContainer.classList.add("dragging");
-positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-if (Math.abs(positionDiff) > 100) {
-    e.preventDefault();
-}
+    if(!isDragStart) return;
+    isDragging = true;
+    carouselContainer.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    if (Math.abs(positionDiff) > 100) {
+        e.preventDefault();
+    }
 
-carouselContainer.scrollLeft = prevScrollLeft - positionDiff;
-showHideIcons();
+    carouselContainer.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
 }
 
 // добавляем обработчики событий к слайдеру, когда DOM готов

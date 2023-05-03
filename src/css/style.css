@@ -142,6 +142,16 @@
   font-size: calc(1em + 2vw);
   color: rgb(234, 255, 75);
 }
+.content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block:hover, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block:hover {
+  text-decoration: underline;
+  color: #00ca0d;
+}
+.content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block:hover p, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block:hover p {
+  color: rgb(255, 0, 0);
+}
+.content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block:hover .procedur-naim, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block:hover .procedur-naim {
+  color: rgb(255, 120, 237);
+}
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1, .content-conteiner main .main-conteiner .main-price-block .beauty-price2, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 {
   height: 100vi;
 }
@@ -175,7 +185,7 @@
   font-size: calc(1em + 2vw);
   word-break: break-all;
   text-align: center;
-  height: 10vi;
+  height: 15vi;
   align-items: flex-end;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok3 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok3 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok3 p {
