@@ -191,7 +191,7 @@
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok2 p {
   text-align: left;
   font-size: calc(1em + 2vw);
-  color: #ff5b24;
+  color: #ffffff;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok3 {
   padding: 5vi 0;
@@ -226,6 +226,7 @@
   text-align: center;
   font-size: 16px;
   padding: 5% 10%;
+  color: #ffffff;
 }
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .first p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .therd p {
   padding: 5% 0;
