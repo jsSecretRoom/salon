@@ -254,13 +254,13 @@
                     grid-column: 1 / 4;
                     background: url('../img/4.jpg')  0 0/cover no-repeat;
                     text-align: center;
-                    font-size: 20px;
+                    font-size: 16px;
                     padding: 5% 10%;
                     .first, .secont, .therd{
                         
                         p{
                             padding: 5% 0;
-                            font-size: calc(1em + 1vw - 3px);
+                            font-size: 24px;
                         }
                     }
                     .first{
@@ -352,6 +352,7 @@
         .futer-conteiner {
             display: flex;
             justify-content: space-between;
+            flex-direction: column;
             background-color: #8589EA;
             .user-contacts, .my-contacts{
                 flex-grow:1;
@@ -369,6 +370,10 @@
                     }
                 }
             }
+            @media (min-width: 458px){
+                flex-direction: row;
+            }
+            
         }
         
     }

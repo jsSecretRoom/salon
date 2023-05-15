@@ -224,12 +224,12 @@
   grid-column: 1/4;
   background: url("../img/4.jpg") 0 0/cover no-repeat;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   padding: 5% 10%;
 }
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .first p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont p, .content-conteiner main .main-conteiner .main-price-block .main-procedur .therd p {
   padding: 5% 0;
-  font-size: calc(1em + 1vw - 3px);
+  font-size: 24px;
 }
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .first .color-hed {
   font-family: "Lobster";
@@ -302,6 +302,7 @@
 .content-conteiner footer .futer-conteiner {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   background-color: #8589EA;
 }
 .content-conteiner footer .futer-conteiner .user-contacts, .content-conteiner footer .futer-conteiner .my-contacts {
@@ -317,4 +318,9 @@
 .content-conteiner footer .futer-conteiner .user-contacts .conacts-links a img, .content-conteiner footer .futer-conteiner .my-contacts .conacts-links a img {
   width: 10vi;
   height: 10vi;
+}
+@media (min-width: 458px) {
+  .content-conteiner footer .futer-conteiner {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=style.css.map */
