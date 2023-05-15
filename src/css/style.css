@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Lobster;
+  src: url("/src/founts/Lobster-Regular.ttf");
+}
+@font-face {
+  font-family: Pacifico;
+  src: url("/src/founts/Pacifico-Regular.ttf");
+}
 .content-conteiner header .header-conteiner .user-info {
   display: grid;
   grid-template-columns: 40vi 1fr;
@@ -13,6 +21,7 @@
 }
 .content-conteiner header .header-conteiner .user-info .user-foto .user-name p {
   font-size: calc(1em + 1vw);
+  font-family: Pacifico;
 }
 .content-conteiner header .header-conteiner .user-info .user-foto img {
   width: 40vi;
@@ -29,6 +38,7 @@
   display: flex;
 }
 .content-conteiner header .header-conteiner .user-info .user-skils .profession .profession-tex p {
+  font-family: Pacifico;
   font-size: calc(1em + 1vw);
 }
 .content-conteiner header .header-conteiner .user-info .user-skils .tabs {
@@ -59,6 +69,9 @@
 .content-conteiner header .header-conteiner .user-info .user-skils .tabs .left-tabs a .shop-items, .content-conteiner header .header-conteiner .user-info .user-skils .tabs .right-tabs a .shop-items {
   color: #00ca0d;
 }
+.content-conteiner header .header-conteiner .user-info .user-skils .tabs .left-tabs a span, .content-conteiner header .header-conteiner .user-info .user-skils .tabs .right-tabs a span {
+  font-family: Lobster;
+}
 .content-conteiner header .header-conteiner .phone-number {
   display: flex;
   width: 100%;
@@ -69,6 +82,7 @@
   padding: 0 5%;
 }
 .content-conteiner header .header-conteiner .phone-number p {
+  font-family: Pacifico;
   font-size: calc(1em + 1vw);
 }
 .content-conteiner nav {
@@ -111,6 +125,7 @@
   padding: 2%;
   text-align: center;
   font-size: calc(1em + 4vw);
+  font-family: "Lobster";
 }
 .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block {
   display: flex;
@@ -137,10 +152,12 @@
   background: none;
   flex-grow: 1;
   color: rgb(0, 187, 255);
+  font-family: "Lobster";
 }
 .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block .prices, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block .prices {
   font-size: calc(1em + 2vw);
   color: rgb(234, 255, 75);
+  font-family: "Lobster";
 }
 .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .left-price .price-block:hover, .content-conteiner main .main-conteiner .main-price-block .detailed-price .my-price .right-price .price-block:hover {
   text-decoration: underline;
@@ -153,7 +170,7 @@
   color: rgb(255, 120, 237);
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1, .content-conteiner main .main-conteiner .main-price-block .beauty-price2, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 {
-  height: 100vi;
+  height: 110vi;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont {
   height: 100vi;
@@ -165,31 +182,27 @@
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok1, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok1, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok1 {
   height: 10vi;
-  font-size: calc(1em + 2vw);
+  font-size: calc(1em + 3vw);
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok1 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok1 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok1 p {
   color: #006cc5;
-}
-.content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok2, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok2, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok2 {
-  padding: 5vi 0;
+  font-family: Lobster;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok2 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok2 p {
   text-align: left;
-  font-size: calc(1em + 1vw);
-  color: #78ffcb;
-  font-style: italic;
-  font-weight: bold;
+  font-size: calc(1em + 2vw);
+  color: #ff5b24;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok3, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok3 {
-  padding: 5% 10% 0 10%;
-  font-size: calc(1em + 2vw);
+  padding: 5vi 0;
+  font-size: calc(1em + 3vw);
   word-break: break-all;
   text-align: center;
-  height: 15vi;
-  align-items: flex-end;
+  height: 20vi;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 .procedurs-container .infocont .blok3 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price2 .procedurs-container .infocont .blok3 p, .content-conteiner main .main-conteiner .main-price-block .beauty-price3 .procedurs-container .infocont .blok3 p {
   color: #006cc5;
+  font-family: Lobster;
 }
 .content-conteiner main .main-conteiner .main-price-block .beauty-price1 {
   background: url("../img/lips.jpg") 0 0/cover no-repeat;
@@ -218,15 +231,29 @@
   padding: 5% 0;
   font-size: calc(1em + 1vw - 3px);
 }
+.content-conteiner main .main-conteiner .main-price-block .main-procedur .first .color-hed {
+  font-family: "Lobster";
+  color: #006cc5;
+  font-size: calc(1em + 3vw);
+}
+.content-conteiner main .main-conteiner .main-price-block .main-procedur .first p {
+  color: #ffffff;
+}
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont {
   display: none;
 }
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .secont p {
   font-size: calc(1em + 1vw - 3px);
+  color: #ffffff;
 }
 .content-conteiner main .main-conteiner .main-price-block .main-procedur .therd {
+  font-family: "Lobster";
+  color: #006cc5;
   display: flex;
   justify-content: space-around;
+}
+.content-conteiner main .main-conteiner .main-price-block .main-procedur .therd p {
+  font-size: calc(1em + 3vw);
 }
 .content-conteiner main .main-conteiner .my-vork-foto {
   display: grid;
@@ -237,35 +264,28 @@
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner {
   display: grid;
-  grid-template-columns: 40vi 60vi;
-}
-.content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-foto {
-  background-color: #93ac00;
-  display: grid;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 40vi 1fr;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-foto .you-byografy-foto img {
   width: 40vi;
   height: 40vi;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info {
-  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3%;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-name {
-  padding: 3%;
   font-size: calc(1em + 1vw - 3px);
   text-align: center;
   color: #006cc5;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state {
-  padding: 2%;
   word-break: break-all;
   text-align: center;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 29vi;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state .paragraf1 {
   font-size: calc(1em + 1vw - 4px);
@@ -277,7 +297,6 @@
   display: none;
 }
 .content-conteiner main .main-conteiner .byografy .byografy-conteiner .byografy-info .byografy-state a {
-  height: 10vi;
   font-size: calc(1em + 1vw);
 }
 .content-conteiner footer .futer-conteiner {

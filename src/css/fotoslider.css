@@ -29,7 +29,7 @@
   
   text-align: center;
   line-height: 44px;
-  background: #ff0141;
+  background: #ff0141c1;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
@@ -44,11 +44,11 @@
   background: #f2f2f2;
 }
 .wrapper i:first-child{
-  left: -22px;
+  left: 1vi;
   display: none;
 }
 .wrapper i:last-child{
-  right: -22px;
+  right: 1vi;
 }
 .wrapper .carousel{
   font-size: 0px;
